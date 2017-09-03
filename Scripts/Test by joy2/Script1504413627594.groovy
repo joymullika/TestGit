@@ -19,3 +19,55 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://vivblind.play2pay.me/volunteer/register')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_EMAIL'), 'woratorn.aun@mfu.ac.th')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_PASSWORD'), '123456')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_password_confirmation'), '123456')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_FIRST_NAME_TH'), 'นายจันทร์')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_LAST_NAME_TH'), 'อังคาร')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_FIRST_NAME_EN'), 'Jan')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_LAST_NAME_EN'), 'Ungkarn')
+
+WebUI.doubleClick(findTestObject('test5/Page_ -/input_CITIZEN_ID'))
+
+WebUI.setText(findTestObject('test5/Page_ -/input_BIRTH_DATE'), '06/09/1995')
+
+WebUI.selectOptionByValue(findTestObject('test5/Page_ -/select_RELIGION'), 'อื่นๆ', true)
+
+WebUI.selectOptionByValue(findTestObject('test5/Page_ -/select_EDUCATIONAL'), 'ต่ำกว่าปริญญาตรี', true)
+
+WebUI.selectOptionByValue(findTestObject('test5/Page_ -/select_CAREER'), 'นักศึกษา', true)
+
+WebUI.setText(findTestObject('test5/Page_ -/input_ADDRESS_NO'), '12')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_ADDRESS_MOO'), '4')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_ADDRESS_ROAD'), 'ถนน')
+
+not_run: WebUI.click(findTestObject('test5/Page_ -/div_col-sm-2'), FailureHandling.OPTIONAL)
+
+WebUI.selectOptionByValue(findTestObject('test5/Page_ -/select_ADDRESS_SUBDISTRICT'), '8888', true, FailureHandling.OPTIONAL)
+
+WebUI.setText(findTestObject('test5/Page_ -/input_ADDRESS_POSTCODE'), '10100')
+
+WebUI.selectOptionByValue(findTestObject('test5/Page_ -/select_STATUS_EDU_WORK'), 'กำลังศึกษา', true)
+
+WebUI.setText(findTestObject('test5/Page_ -/input_ADDRESS_ALL'), 'บ้าน')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_CELL_PHONE'), '0437776253')
+
+WebUI.setText(findTestObject('test5/Page_ -/input_PHONE'), '053232522')
+
+WebUI.click(findTestObject('test5/Page_ -/input_btn btn-primary'))
+
+not_run: WebUI.closeBrowser()
+
