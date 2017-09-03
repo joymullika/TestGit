@@ -18,10 +18,43 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
 WebUI.navigateToUrl('http://vivblind.play2pay.me/volunteer/register')
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://vivblind.play2pay.me/volunteer/register')
+
+WebUI.setText(findTestObject('add by aunz/Page_ -/input_ADDRESS_NO'), 'a')
+
+WebUI.click(findTestObject('add by aunz/Page_ -/div_col-sm-2'))
+
+WebUI.setText(findTestObject('add by aunz/Page_ -/input_ADDRESS_NO'), 'a')
+
+WebUI.selectOptionByIndex(findTestObject('add by aunz/Page_ -/select_ADDRESS_SUBDISTRICT'), '9178', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://vivblind.play2pay.me/volunteer/register')
+
+WebUI.selectOptionByValue(findTestObject('add by aunz/Page_ - (1)/select_RELIGION'), 'พุทธ', true)
+
+WebUI.selectOptionByValue(findTestObject('add by aunz/Page_ - (1)/select_CAREER'), 'เกษตรกร', true)
+
+WebUI.selectOptionByValue(findTestObject('add by aunz/Page_ - (1)/select_ADDRESS_SUBDISTRICT'), '8888', true)
+
+WebUI.closeBrowser()
+
+WebUI.selectOptionByValue(findTestObject('add by aunz/Page_ -/select_ADDRESS_SUBDISTRICT'), '9181', true)
+
+WebUI.selectOptionByValue(findTestObject('add by aunz/Page_ -/select_ADDRESS_SUBDISTRICT'), '9179', true)
+
+WebUI.selectOptionByValue(findTestObject('add by aunz/Page_ -/select_ADDRESS_SUBDISTRICT'), '9183', true)
+
+WebUI.closeBrowser()
 
 WebUI.setText(findTestObject('test5/Page_ -/input_EMAIL'), 'woratorn.aun@mfu.ac.th')
 
